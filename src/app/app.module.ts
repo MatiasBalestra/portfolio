@@ -9,6 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { EducationComponent } from './pages/education/education.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 
 
 @NgModule({
@@ -17,6 +22,11 @@ import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
     HeaderComponent,
     FooterComponent,
     NavBarComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    EducationComponent,
+    SkillsComponent,
+    AboutmeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,24 @@
 .container-navbar {
     width: 100%;
-    height: 100%;
     display: flex;
-
+    justify-content: center;
+    background-color: blue;
 
     .menu-navegacion {
-        width: 25%;
-        background-color: blue;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        height: 2rem;
+        align-items: center;
     }
 
-    .menu-dinamico {
-        width: 75%;
-        background-color: red;
-    }
 }
 
+.menu-dinamico {
+    width: 100%;
+    background-color: red;
+    height: 50%;
+}
 .footer {
 
     height: 30%;
