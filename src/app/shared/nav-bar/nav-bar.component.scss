@@ -1,0 +1,22 @@
+.container-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+
+    .menu-navegacion {
+        width: 25%;
+        background-color: blue;
+    }
+
+    .menu-dinamico {
+        width: 75%;
+        background-color: red;
+    }
+}
+
+.footer {
+
+    height: 30%;
+    background-color: yellow
+}
