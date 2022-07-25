@@ -1,3 +1,4 @@
+import { PersonaService } from './core/services/persona.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -34,9 +35,12 @@ import { HttpClientModule } from '@angular/common/http';
     MatSliderModule,
     MaterialModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+  
   ],
-  providers: [],
+  providers: [
+    PersonaService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

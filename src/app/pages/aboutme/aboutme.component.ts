@@ -7,7 +7,10 @@ import { PersonaService } from 'src/app/core/services/persona.service';
   styleUrls: ['./aboutme.component.scss']
 })
 export class AboutmeComponent implements OnInit {
-  posts:any;
+  public posts: any;
+
+
+
 
   constructor(private service:PersonaService) { }
 
@@ -18,7 +21,12 @@ export class AboutmeComponent implements OnInit {
     })
 
 
+   
+    
+
     
   }
+
+
 
 }
