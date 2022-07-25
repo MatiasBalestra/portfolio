@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonaService } from 'src/app/core/services/persona.service';
 
 @Component({
   selector: 'app-aboutme',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aboutme.component.scss']
 })
 export class AboutmeComponent implements OnInit {
+  posts:any;
 
-  constructor() { }
+  constructor(private service:PersonaService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.service.getPosts().subscribe(response => {
+      this.posts= response;
+      console.log(this.posts);
+    })
+
+
+    
   }
 
 }
