@@ -10,10 +10,11 @@ export class PersonaService {
 
   private url = 'https://balestra-matias.herokuapp.com/persona/details';
 
-  constructor(private HttpClient: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getPosts() {
-    return this.HttpClient.get(this.url);
+
+  public get (url:string){
+    return this.http.get(url);
   }
 
 }

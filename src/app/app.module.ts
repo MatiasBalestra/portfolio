@@ -15,6 +15,7 @@ import { EducationComponent } from './pages/education/education.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LayoutComponent } from './shared/layout/layout.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     EducationComponent,
     SkillsComponent,
     AboutmeComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,

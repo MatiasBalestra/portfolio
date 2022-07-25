@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonaService } from 'src/app/core/services/persona.service';
+import { datainterface, Education, Experience, Skill, Project } from 'src/app/core/interfaces/datainterface';
+ 
 
 @Component({
   selector: 'app-aboutme',
@@ -7,24 +9,24 @@ import { PersonaService } from 'src/app/core/services/persona.service';
   styleUrls: ['./aboutme.component.scss']
 })
 export class AboutmeComponent implements OnInit {
-  public posts: any;
+  public data:any = [];
 
+  constructor(private PersonaService:PersonaService) { }
 
+  ngOnInit(): void{
 
+    this.cargarData();
+    
+    
+  }
 
-  constructor(private service:PersonaService) { }
-
-  ngOnInit(){
-    this.service.getPosts().subscribe(response => {
-      this.posts= response;
-      console.log(this.posts);
+  public cargarData(){
+    this.PersonaService.get(`https://balestra-matias.herokuapp.com/persona/details`)
+    .subscribe(respuesta => {
+      this.data = respuesta;
+      console.log(this.data);
+      
     })
-
-
-   
-    
-
-    
   }
 
 

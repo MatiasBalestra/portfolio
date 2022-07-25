@@ -1,27 +1,16 @@
-.container-navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.container-navbar {    
     background-color: blue;
+    height: 20%;    
+    display: flex;
+    align-items: center;
+
 
     .menu-navegacion {
-        width: 80%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        height: 2rem;
-        align-items: center;    
+        flex-wrap: wrap;
+        justify-content:space-around;
     }
 
 }
 
-.menu-dinamico {
-    width: 100%;
-    background-color: red;
-    height: 50%;
-}
-.footer {
-    width: 100%;
-
-    height: 30%;
-    background-color: yellow
-}
